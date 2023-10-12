@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    
+
+}
+
+.top-view{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+}
+
+.back-view{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    
+}
+.back-view img{
+    width: 100%;
+    height: 100%;
+}
+.section-one{
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width:1920px ;
+    position: relative;
+}
+.nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+.nav h1{
+    font-size: 7vh;
+    font-family: "kajiro";
+    font-weight: 500;
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 5px;
+
+
+
+}
+.nav a{
+    font-size: 2.5vh;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "lemajor6";
+    padding: 0 20px;
+    color: white;
+    font-weight: 500;
+    pointer-events: all;
+
+    
+
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0 ,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+    
+}
+.content-left{
+    min-width: 50%;
+    
+    
+}
+.content-left .element{
+    position: relative;
+    height: 9vw;
+    overflow: hidden;
+    
+}
+
+.content-left .element h1{
+    line-height: 0.9;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-family: "kajiro";
+    font-weight: 500;
+    color: white;
+    font-size: 11vw;
+    text-transform: uppercase;
+
+}
+.content-left .element h1:nth-child(1){
+    top: 0;
+}
+.content button{
+    padding: 0.8vw 3vw;
+    font-size: 3vw;
+    font-family: "kajiro"; 
+    margin-top: 2vw;
+    pointer-events: all;
+
+}
+
+.content button:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+   
+
+}
+
+.content-right{
+    width: 25%;
+    color: white;
+    font-family: "Helvetia";
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+
+}
+
+.content-right p{
+  text-align: right;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "";
+  
+}
+
+.content .image{
+    width: 100%;
+    height: 170px;
+    background-image: url(./IMAGES/DEMO.jpg);
+    background-size: cover;
+    background-position:center ;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.content p:nth-child(3){
+    margin-bottom: 100px;
+}
